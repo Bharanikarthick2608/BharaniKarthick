@@ -1,158 +1,85 @@
-# AgentNeo Installation and Setup Guide 
+# AgentNeo Installation and Setup Guide
 
-AgentNeo is a versatile tool for monitoring AI agents, tracing LLMs, and visualizing their interactions. Below is a comprehensive installation guide covering different platforms and package management tools: pip, pipenv, and virtualenv for Windows, macOS, and Linux.
+## Contents
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Version Information](#version-information)
+* [Installation Methods](#installation-methods)
+   * [Using pip and Virtualenv](#using-pip-and-virtualenv)
+   * [Using Conda](#using-conda)
+   * [Using Pipenv](#using-pipenv)
+* [Additional Information](#additional-information)
 
-## 1. Windows Installation
+## Overview
+AgentNeo is a versatile tool for monitoring AI agents, tracing LLMs, and visualizing their interactions. This guide provides comprehensive installation instructions for multiple platforms and package management tools.
 
-### 1.1. Using pip and Virtualenv
+## Prerequisites
+* Python 3.8 or above
+* pip/Conda/Pipenv (latest version recommended)
 
-**Step 1: Install Python 3.9+**
-- Download from [Python.org](https://www.python.org/downloads/)
-- Add Python to PATH during installation
+## Version Information
+* For latest version: `pip install --U`
+* For specific version: `pip install agentneo==1.1.2`
 
-**Step 2: Set Up a Virtual Environment and Install AgentNeo**
+## Installation Methods
 
-Create a virtual environment:
+### Using pip and Virtualenv
+
+1. **Create a virtual environment**:
+   ```bash
+   python -m venv agentneo-env
+   ```
+
+2. **Activate the environment**:
+   * **Windows**:
+     ```bash
+     agentneo-env\Scripts\activate
+     ```
+   * **macOS/Linux**:
+     ```bash
+     source agentneo-env/bin/activate
+     ```
+
+3. **Install AgentNeo**:
+   ```bash
+   pip install agentneo
+   ```
+
+### Using Conda
+
+1. **Create and activate a conda environment**:
+   ```bash
+   conda create --name agentneo-env
+   conda activate agentneo-env
+   ```
+
+2. **Install AgentNeo**:
+   ```bash
+   pip install agentneo
+   ```
+
+### Using Pipenv
+
+1. **Install Pipenv**:
+   * **Windows/macOS/Linux**:
+     ```bash
+     pip install pipenv
+     ```
+   * **macOS (via Homebrew)**:
+     ```bash
+     brew install pipenv
+     ```
+
+2. **Set up and activate Pipenv environment**:
+   ```bash
+   pipenv install agentneo
+   pipenv shell
+   ```
+
+## Additional Information
+
+### Verifying Installation
+To verify that AgentNeo is installed correctly, run:
 ```bash
-python -m venv agentneo-env
+python -c "import agentneo; print(agentneo.__version__)"
 ```
-*Creates a new virtual environment named `agentneo-env`*
-
-Activate the environment:
-```bash
-agentneo-env\Scripts\activate
-```
-*Activates the virtual environment, isolating dependencies for your project*
-
-Install AgentNeo:
-```bash
-pip install agentneo
-```
-*Installs the AgentNeo package within the virtual environment*
-
-### 1.2. Using Pipenv
-
-**Step 1: Install Pipenv**
-```bash
-pip install pipenv
-```
-*Installs Pipenv, a tool for managing Python project dependencies*
-
-**Step 2: Set Up Pipenv Environment**
-
-Install Python 3.9 and AgentNeo in the environment:
-```bash
-pipenv install --python 3.9 agentneo
-```
-*Sets up a new Pipenv environment with Python 3.9 and installs AgentNeo*
-
-Activate the Pipenv shell:
-```bash
-pipenv shell
-```
-*Activates the Pipenv shell for your project*
-
-## 2. macOS Installation
-
-### 2.1. Using pip and Virtualenv
-
-**Step 1: Install Python 3.9 via Homebrew**
-```bash
-brew install python@3.9
-```
-*Installs Python 3.9 using Homebrew, a popular package manager for macOS*
-
-**Step 2: Set Up Virtual Environment**
-
-Create a virtual environment:
-```bash
-python3.9 -m venv agentneo-env
-```
-*Creates a new virtual environment named `agentneo-env`*
-
-Activate the environment:
-```bash
-source agentneo-env/bin/activate
-```
-*Activates the virtual environment*
-
-Install AgentNeo:
-```bash
-pip install agentneo
-```
-*Installs the AgentNeo package within the virtual environment*
-
-### 2.2. Using Pipenv
-
-**Step 1: Install Pipenv**
-```bash
-brew install pipenv
-```
-*Installs Pipenv using Homebrew*
-
-**Step 2: Set Up Pipenv Environment**
-
-Install Python 3.9 and AgentNeo:
-```bash
-pipenv install --python 3.9 agentneo
-```
-*Sets up a new Pipenv environment with Python 3.9 and installs AgentNeo*
-
-Activate Pipenv:
-```bash
-pipenv shell
-```
-*Activates the Pipenv shell for your project*
-
-## 3. Linux Installation
-
-### 3.1. Using pip and Virtualenv (Ubuntu/Debian)
-
-**Step 1: Install Python 3.9**
-```bash
-sudo apt update
-sudo apt install python3.9 python3.9-venv python3-pip
-```
-*Updates package lists and installs Python 3.9 along with pip and the virtual environment package*
-
-**Step 2: Set Up Virtual Environment**
-
-Create a virtual environment:
-```bash
-python3.9 -m venv agentneo-env
-```
-*Creates a new virtual environment named `agentneo-env`*
-
-Activate the environment:
-```bash
-source agentneo-env/bin/activate
-```
-*Activates the virtual environment*
-
-Install AgentNeo:
-```bash
-pip install agentneo
-```
-*Installs the AgentNeo package within the virtual environment*
-
-### 3.2. Using Pipenv
-
-**Step 1: Install Pipenv**
-```bash
-sudo apt install pipenv
-```
-*Installs Pipenv using the package manager*
-
-**Step 2: Set Up Pipenv Environment**
-
-Install Python 3.9 and AgentNeo:
-```bash
-pipenv install --python 3.9 agentneo
-```
-*Sets up a new Pipenv environment with Python 3.9 and installs AgentNeo*
-
-Activate the environment:
-```bash
-pipenv shell
-```
-*Activates the Pipenv shell for your project*
