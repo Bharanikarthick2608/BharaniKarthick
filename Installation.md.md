@@ -12,8 +12,8 @@
 AgentNeo is a versatile tool for monitoring AI agents, tracing LLMs, and visualizing their interactions. This guide provides comprehensive installation instructions for multiple platforms and package management tools.
 
 ## Prerequisites
-- Python 3.8.8 or above
-- pip/Conda (latest version recommended)
+- Python 3.8 or above
+- pip/Conda/Pipenv (latest version recommended)
 
 ## Installation Methods
 This guide covers the following installation methods:
