@@ -12,17 +12,17 @@
 AgentNeo is a versatile tool for monitoring AI agents, tracing LLMs, and visualizing their interactions. This guide provides comprehensive installation instructions for multiple platforms and package management tools.
 
 ## Prerequisites
-- Python 3.8 or above
-- pip (latest version recommended)
+- Python 3.8.8 or above
+- pip/Conda (latest version recommended)
 
 ## Installation Methods
 This guide covers the following installation methods:
 - pip with virtualenv (all platforms)
-- Conda (Windows and macOS)
+- Conda (all platforms)
 - Pipenv (all platforms)
 
 ## Version Information
-- For latest version: `pip install --upgrade agentneo`
+- For latest version: `pip install --U`
 - For specific version: `pip install agentneo==1.1.2`
 
 ## 1. Windows Installation
@@ -105,7 +105,26 @@ Install AgentNeo:
 pip install agentneo
 ```
 
-### 3.2. Using Pipenv
+### 3.2. Using Conda
+**Step 1: Install Miniconda**
+Run the installer:
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+**Step 2: Set Up Conda Environment**
+Create and activate an environment:
+```bash
+conda create --name agentneo-env
+conda activate agentneo-env
+```
+
+**Step 3: Install AgentNeo**
+```bash
+pip install agentneo
+```
+
+### 3.3. Using Pipenv
 Set up Pipenv environment:
 ```bash
 sudo apt install pipenv
