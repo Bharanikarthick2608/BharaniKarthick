@@ -106,20 +106,12 @@ pip install agentneo
 ```
 
 ### 3.2. Using Conda
-**Install Miniconda**
-Run the installer:
-```bash
-bash Miniconda3-latest-Linux-x86_64.sh
-```
-
-**Set Up Conda Environment**
 Create and activate an environment:
 ```bash
 conda create --name agentneo-env
 conda activate agentneo-env
 ```
-
-**Install AgentNeo**
+Install AgentNeo
 ```bash
 pip install agentneo
 ```
