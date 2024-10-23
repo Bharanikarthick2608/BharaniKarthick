@@ -1,4 +1,4 @@
-# AgentNeo Installation and Setup Guide (Python 3.9+)
+# AgentNeo Installation and Setup Guide 
 
 AgentNeo is a versatile tool for monitoring AI agents, tracing LLMs, and visualizing their interactions. Below is a comprehensive installation guide covering different platforms and package management tools: pip, pipenv, and virtualenv for Windows, macOS, and Linux.
 
