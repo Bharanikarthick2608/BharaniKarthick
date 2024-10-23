@@ -1,4 +1,4 @@
-# AgentNeo Installation and Setup Guide (Python 3.9+)
+# AgentNeo Installation and Setup Guide 
 
 ## Contents
 - [Overview](#overview)
@@ -159,17 +159,17 @@ pipenv shell
 
 ### 3.1. Using pip and Virtualenv (Ubuntu/Debian)
 
-**Step 1: Install Python 3.9**
+**Step 1: Install Python**
 ```bash
 sudo apt update
-sudo apt install python3.9 python3.9-venv python3-pip
+sudo apt install python3 python3-venv python3-pip
 ```
 
 **Step 2: Set Up Virtual Environment**
 
 Create a virtual environment:
 ```bash
-python3.9 -m venv agentneo-env
+python3 -m venv agentneo-env
 ```
 
 Activate the environment:
@@ -191,12 +191,34 @@ sudo apt install pipenv
 
 **Step 2: Set Up Pipenv Environment**
 
-Install Python 3.9 and AgentNeo:
+Install Python and AgentNeo:
 ```bash
-pipenv install --python 3.9 agentneo
+pipenv install --python 3 agentneo
 ```
 
 Activate the environment:
 ```bash
 pipenv shell
 ```
+
+## Additional Information
+
+### Verifying Installation
+To verify that AgentNeo is installed correctly, run:
+```bash
+python -c "import agentneo; print(agentneo.__version__)"
+```
+
+### Common Issues
+
+#### Virtual Environment Not Activating
+- Windows: Ensure execution policy allows running scripts
+- Linux/macOS: Check file permissions for activation script
+
+#### Installation Fails
+- Ensure pip is up to date: `pip install --upgrade pip`
+- Check Python version compatibility
+- Verify internet connection
+
+
+
