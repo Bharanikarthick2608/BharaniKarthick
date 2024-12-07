@@ -8,3 +8,4 @@ transformers==4.31.0
 torch==2.3.1
 numpy==1.23.5
 scipy==1.11.2
+tornado>=6.4.2 # not directly required, pinned by Snyk to avoid a vulnerability
