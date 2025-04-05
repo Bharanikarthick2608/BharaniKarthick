@@ -1,7 +1,7 @@
 --extra-index-url https://pypi.org/simple/
 pip>=24.2
 setuptools>=67.8.0  # Adding setuptools for distutils dependency
-streamlit==1.16.0
+streamlit==1.43.2
 pandas==2.0.3
 plotly==5.8.0
 transformers==4.31.0
